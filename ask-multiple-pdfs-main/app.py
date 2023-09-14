@@ -82,7 +82,7 @@ def main():
         st.session_state.chat_history = None
 
     st.header("Compare multiple PDFs:")
-    user_question = st.text_area("Ask a question about your documents:")
+    user_question = st.text_area("Ask a question about your documents brooooo:")
 
     if user_question:
         if st.button("Submit") or st.session_state.enter_pressed:
