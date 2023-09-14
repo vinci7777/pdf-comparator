@@ -9,6 +9,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 from htmlTemplates import css, bot_template, user_template
 import os
+from dotenv import load_dotenv
 
 api_key = os.getenv("OPENAI_API_KEY")
 
@@ -75,6 +76,7 @@ if 'enter_pressed' not in st.session_state:
     st.session_state.enter_pressed = False
 
 def main():
+    load_dotenv() 
     st.set_page_config(page_title="Compare multiple PDFs:")
     st.write(css, unsafe_allow_html=True)
 
