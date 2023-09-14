@@ -81,7 +81,7 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = None
 
-    st.header("Compare multiple PDFs: :books:")
+    st.header("Compare multiple PDFs:")
     user_question = st.text_area("Ask a question about your documents:")
 
     if user_question:
