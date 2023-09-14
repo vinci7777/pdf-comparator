@@ -73,7 +73,7 @@ if 'enter_pressed' not in st.session_state:
 
 def main():
     load_dotenv()
-    st.set_page_config(page_title="Compare multiple PDFs:", page_icon=":books:")
+    st.set_page_config(page_title="Compare multiple PDFs lol:", page_icon=":books:")
     st.write(css, unsafe_allow_html=True)
 
     if "conversation" not in st.session_state:
